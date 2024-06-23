@@ -1,17 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            max-width: 100vw;
+            margin: 0 auto;
+            padding: 0;
+			display: flex;
+        }
+		.container {
+            padding: 1rem; /* Hier fügen Sie den Seitenrand hinzu */
+			max-width: 1200px;
+			width: 100%;
+            margin: 0 auto;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+            justify-content: center;
+            align-items: center;
+			margin-bottom: 1rem;
+        }
+		.circle {
+            border-radius: 50%; /* Rundet die Ecken so stark ab, dass ein Kreis entsteht */
+          max-width: 50%;
+            object-fit: cover; /* Stellt sicher, dass das Bild den Kreis ausfüllt */
+            margin: 0 auto; /* Zentriert das kreisförmige Bild */
+        }
+		.circle2 {
+            border-radius: 50%; /* Rundet die Ecken so stark ab, dass ein Kreis entsteht */
+          
+            object-fit: cover; /* Stellt sicher, dass das Bild den Kreis ausfüllt */
+            margin: 0 auto; /* Zentriert das kreisförmige Bild */
+        }
+        .row figure, .row .text {
+			flex: 1 1 48%;
+            flex: 1;
+            margin: 0;
+            padding: 0;
+			max-width: 48%;
+        }
+		.text {
+			padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+			margin-left: 20px;
+			margin-right: 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+			border-radius: 25px;
+        }
+        figcaption {
+			padding: 5px;
+            text-align: center;
+        }
+		h1 {
+            color: rgb(219, 123, 190); /* Farbe der Überschrift */
+            text-align: center; /* Zentrierung der Überschrift */
+        }
+		h2{
+			color: black;
+			text-align: center;
+			size: 100px;
+		}
+		footer {
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+            background-color: #f8f8f8;
+            border-top: 1px solid #e7e7e7;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-	<main>
-		<figure>
-			<img src="https://picsum.photos/200/300" alt="1">
-			<figcaption>something</figcaption>
-		</figure>
-	</main>
+	<div class="container">
+	<h2>Excursion 2024 <br>
+	Hannah Flintermann  <br>
+	Documentation <br><br><br></h2>
+    <h1>Details</h1>
+    <div class="row">
+        <figure>
+            <img src="photos/Exkursion7.jpg" alt="">
+            <figcaption>Landscapes</figcaption>
+        </figure>
+        <figure>
+            <img src="photos/exkursion22.jpg" alt="">
+            <figcaption>oldschool pixel?</figcaption>
+        </figure>
+    </div>
+    <figure>
+        <img src="photos/Exkursion4.jpg" alt="">
+        <figcaption>observing and creating</figcaption>
+    </figure>
+    <div class="row">
+        <figure>
+            <img src="photos/Exkursion21.jpg" alt="">
+            <figcaption>I love drawing old people, wrinkles, imperfections.</figcaption>
+        </figure>
+        <figure>
+            <img src="photos/FullSizeRender_VSCO 10.JPG" alt="">
+            <figcaption>motion</figcaption>
+        </figure>
+    </div>
+	<div class="text">
+		<h1>Persepective</h1>
+		<p>The image changes as you get closer. <br>
+			The image changes as you move further away. <br>
+			The image never looks the same. 
+		</p>
+	</div>
+    <figure>
+        <img src="photos/FullSizeRender_VSCO 11.JPG" alt="" class="circle">
+        <figcaption>Brushstrokes</figcaption>
+    </figure>
+
+    <h1>Form</h1>
+    <figure>
+        <img src="photos/Exkursion18.jpg" alt="">
+        <figcaption>Sensual?</figcaption>
+    </figure>
+    <div class="row">
+        <figure>
+            <img src="photos/Exkursion11.jpg" alt="" class="circle2">
+            <figcaption>Shape of the sky</figcaption>
+        </figure>
+        <figure>
+            <img src="photos/Exkursion15.jpg" alt="">
+            <figcaption>New Perspektives</figcaption>
+        </figure>
+    </div>
+	<div class="row">
+    <figure>
+        <img src="photos/Exkursion10.jpg" alt="">
+        <figcaption>Structures</figcaption>
+    </figure>
+	<div class="text">
+		<h1>Observing the outside world</h1>
+	<p>Monday 10am - <br> A stroll through Leipzig's city center.  <br>Accompanied by our sketchbooks, the gray walls seem less gray. <br> What seemed normal is suddenly new and interesting. <br>I am the decisionmaker of what I want to make visible. <br><br> A group of tourists stand together and listen to a city guide  <br>who tells them about the city's past.  <br>A man tries in vain to open the lock on his bicycle.  <br>Colors and shapes rush past us, <br> as we try to capture all that seems worthy to us.</p>
+</div>
+	</div>
+    <figure>
+        <img src="photos/Exkursion12.jpg" alt="">
+        <figcaption>Img 1</figcaption>
+    </figure>
+    
+    <h1>Expression </h1>
+    <figure>
+        <img src="photos/FullSizeRender_VSCO 9.JPG" alt="">
+        <figcaption>Dancing with the devil</figcaption>
+    </figure>
+    <div class="row">
+        <figure>
+            <img src="photos/FullSizeRender_VSCO 13.JPG" alt="">
+            <figcaption>good advice your mother gave you</figcaption>
+        </figure>
+        <figure>
+            <img src="photos/FullSizeRender_VSCO 12.JPG" alt="">
+            <figcaption>Punk</figcaption>
+        </figure>
+    </div>
+	<div class="row"> 
+		<div class="text">
+			<h1>Seeking Inspiration</h1>
+			<p>Tuesday 11am - <br> Old things can turn into new things. <br>Nothing is ever really "done". <br> There is always the posssibility of change.   </p>
+		</div>
+	<figure>
+		<img src="photos/exkursion23.jpg" alt=""  class="circle2">
+		<figcaption>Punk</figcaption>
+	</figure>
+	
+</div>
+    <figure>
+        <img src="photos/Exkursion17.jpg" alt="">
+        <figcaption>Details</figcaption>
+    </figure>
+	<footer>
+		© All images are property of their respective owner. Source code available under MIT License!
+	</footer>
+</div>
+
 </body>
 </html>
